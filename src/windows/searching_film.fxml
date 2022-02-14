@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="777.0" prefWidth="1070.0" style="-fx-background-color: #444C5C;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SearchingFilm">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="118.0" prefHeight="646.0" prefWidth="1045.0" style="-fx-background-color: #E1B16A;">
+            <children>
+                <TextField fx:id="name_id" layoutX="318.0" layoutY="30.0" />
+                <Button fx:id="ok_button_id" layoutX="412.0" layoutY="233.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="221.0" text="Поиск">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Button>
+                <Label layoutX="89.0" layoutY="29.0" text="Название фильма">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="country_id" layoutX="318.0" layoutY="65.0" />
+                <Label layoutX="89.0" layoutY="64.0" text="Страна производства">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="89.0" layoutY="100.0" text="Возростное ограничение">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="duration_id" layoutX="318.0" layoutY="140.0" />
+                <Label layoutX="89.0" layoutY="139.0" text="Продолжительность">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="89.0" layoutY="177.0" text="Жанр">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="director_id" layoutX="817.0" layoutY="30.0" prefHeight="25.0" prefWidth="149.0" />
+                <Label layoutX="633.0" layoutY="29.0" text="Режиссер">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="year_id" layoutX="816.0" layoutY="65.0" />
+                <Label layoutX="633.0" layoutY="64.0" text="Год выпуска">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="633.0" layoutY="100.0" text="Формат диска">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="publisher_id" layoutX="816.0" layoutY="140.0" />
+                <Label layoutX="633.0" layoutY="139.0" text="Издатель">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="price_min_id" layoutX="816.0" layoutY="178.0" prefHeight="25.0" prefWidth="66.0" />
+                <Label layoutX="633.0" layoutY="177.0" text="Цена">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="genre_id" layoutX="318.0" layoutY="178.0" prefWidth="150.0" />
+                <ComboBox fx:id="age_id" layoutX="318.0" layoutY="101.0" prefWidth="150.0" />
+                <ComboBox fx:id="type_id" layoutX="816.0" layoutY="101.0" prefWidth="150.0" />
+                <Label fx:id="status_id" layoutX="79.0" layoutY="375.0" text="Название " visible="false">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            <TableView fx:id="tableFilms" layoutX="13.0" layoutY="290.0" prefHeight="308.0" prefWidth="1022.0">
+              <columns>
+                  <TableColumn fx:id="column_id" prefWidth="52.0" text="id" />
+                  <TableColumn fx:id="column_place" prefWidth="55.0" text="id места" />
+                  <TableColumn fx:id="column_name" prefWidth="136.0" text="Имя" />
+                  <TableColumn fx:id="column_country" prefWidth="110.0" text="Страна" />
+                  <TableColumn fx:id="column_age" prefWidth="54.0" text="Возростное ограничение" />
+                  <TableColumn fx:id="column_duration" prefWidth="56.0" text="Продолжительность" />
+                  <TableColumn fx:id="column_genre" prefWidth="86.0" text="Жанр" />
+                  <TableColumn fx:id="column_director" prefWidth="100.0" text="Режисер" />
+                  <TableColumn fx:id="column_year" prefWidth="71.0" text="Релиз" />
+                  <TableColumn fx:id="column_type" prefWidth="100.0" text="Тип диска" />
+                  <TableColumn fx:id="column_publisher" prefWidth="127.0" text="Издатель" />
+                  <TableColumn fx:id="column_price" minWidth="9.0" prefWidth="74.0" text="Цена" />
+              </columns>
+            </TableView>
+            <TextField fx:id="price_max_id" layoutX="900.0" layoutY="178.0" prefHeight="25.0" prefWidth="66.0" />
+            <Label layoutX="885.0" layoutY="175.0" text="-">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="326.0" layoutY="25.0" text="Поиск фильмов" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold" size="58.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

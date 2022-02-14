@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="868.0" style="-fx-background-color: #444C5C;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SearchingDocument">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="118.0" prefHeight="422.0" prefWidth="849.0" style="-fx-background-color: #E1B16A;">
+            <children>
+                <TextField fx:id="name_id" layoutX="252.0" layoutY="32.0" prefHeight="25.0" prefWidth="187.0" />
+                <Button fx:id="ok_button_id" layoutX="350.0" layoutY="154.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="149.0" text="Поиск">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Button>
+                <Label layoutX="42.0" layoutY="31.0" text="Имя документа">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="value_min_id" layoutX="251.0" layoutY="67.0" prefHeight="25.0" prefWidth="84.0" />
+                <Label layoutX="42.0" layoutY="66.0" text="Объем документа">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="42.0" layoutY="102.0" text="Дата обновления">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="491.0" layoutY="31.0" text="Тип диска">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="publisher_id" layoutX="636.0" layoutY="67.0" prefHeight="25.0" prefWidth="187.0" />
+                <Label layoutX="491.0" layoutY="66.0" text="Издатель">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="price_min_id" layoutX="636.0" layoutY="103.0" prefHeight="25.0" prefWidth="84.0" />
+                <Label layoutX="491.0" layoutY="102.0" text="Цена">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="type_id" layoutX="637.0" layoutY="32.0" prefHeight="25.0" prefWidth="187.0" />
+                <DatePicker fx:id="date_id" layoutX="293.0" layoutY="103.0" prefHeight="25.0" prefWidth="150.0" />
+                <Label fx:id="status_id" layoutX="70.0" layoutY="257.0" text="Название " visible="false">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="findDocument" layoutX="28.0" layoutY="210.0" prefHeight="200.0" prefWidth="796.0">
+                    <columns>
+                  <TableColumn fx:id="column_id" prefWidth="75.0" text="id" />
+                        <TableColumn fx:id="column_place" prefWidth="61.0" text="id места" />
+                        <TableColumn fx:id="column_name" prefWidth="136.0" text="Название" />
+                        <TableColumn fx:id="column_value" prefWidth="138.0" text="Объем" />
+                        <TableColumn fx:id="column_date" prefWidth="122.0" text="Дата обновления" />
+                        <TableColumn fx:id="column_type" text="Тип диска" />
+                        <TableColumn fx:id="column_publisher" prefWidth="105.0" text="Издатель" />
+                        <TableColumn fx:id="column_price" prefWidth="78.0" text="Цена" />
+                    </columns>
+                </TableView>
+                <Button fx:id="clear_id" layoutX="251.0" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" text="X" textFill="#ff0101" />
+            <TextField fx:id="value_max_id" layoutX="356.0" layoutY="67.0" prefHeight="25.0" prefWidth="84.0" />
+            <Label layoutX="340.0" layoutY="62.0" text="-">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="price_max_id" layoutX="739.0" layoutY="103.0" prefHeight="25.0" prefWidth="84.0" />
+            <Label layoutX="723.0" layoutY="100.0" text="-">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="190.0" layoutY="29.0" text="Поиск документов" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold" size="58.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

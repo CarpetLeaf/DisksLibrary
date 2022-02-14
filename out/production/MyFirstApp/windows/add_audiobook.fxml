@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="868.0" style="-fx-background-color: #444C5C;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddAudiobookController">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="118.0" prefHeight="440.0" prefWidth="849.0" style="-fx-background-color: #E1B16A;">
+            <children>
+                <TextField fx:id="name_id" layoutX="248.0" layoutY="32.0" prefHeight="25.0" prefWidth="215.0" />
+                <Button fx:id="ok_button_id" layoutX="739.0" layoutY="386.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="86.0" text="Ок">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Button>
+                <Label layoutX="27.0" layoutY="31.0" text="Название ">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="author_id" layoutX="249.0" layoutY="67.0" prefHeight="25.0" prefWidth="215.0" />
+                <Label layoutX="27.0" layoutY="66.0" text="Автор">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="27.0" layoutY="102.0" text="Продолжительность">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="27.0" layoutY="141.0" text="Год издания">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="27.0" layoutY="179.0" text="Возростное ограничение">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="490.0" layoutY="31.0" text="Тип диска">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="publisher_id" layoutX="673.0" layoutY="67.0" />
+                <Label layoutX="490.0" layoutY="66.0" text="Издатель">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="price_id" layoutX="673.0" layoutY="103.0" />
+                <Label layoutX="490.0" layoutY="102.0" text="Цена">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="490.0" layoutY="141.0" text="Тип контейнера">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="490.0" layoutY="179.0" text="Номер контейнера">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="place_type_id" layoutX="675.0" layoutY="143.0" prefWidth="150.0" />
+                <ComboBox fx:id="place_num_id" disable="true" layoutX="675.0" layoutY="180.0" prefWidth="150.0" />
+                <ComboBox fx:id="type_id" layoutX="673.0" layoutY="32.0" prefWidth="150.0" />
+                <ComboBox fx:id="age_id" layoutX="248.0" layoutY="180.0" prefHeight="25.0" prefWidth="215.0" />
+            <Spinner fx:id="hours_id" editable="true" layoutX="249.0" layoutY="103.0" prefHeight="25.0" prefWidth="67.0" />
+            <Label layoutX="317.0" layoutY="98.0" text=":">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="390.0" layoutY="97.0" text=":">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="year_id" layoutX="248.0" layoutY="143.0" prefHeight="25.0" prefWidth="215.0" />
+            <TextArea fx:id="description_id" layoutX="269.0" layoutY="220.0" prefHeight="200.0" prefWidth="389.0" />
+            <Label layoutX="168.0" layoutY="293.0" text="Описание">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="minutes_id" editable="true" layoutX="322.0" layoutY="103.0" prefHeight="25.0" prefWidth="67.0" />
+            <Spinner fx:id="seconds_id" editable="true" layoutX="397.0" layoutY="103.0" prefHeight="25.0" prefWidth="67.0" />
+            <Label fx:id="status_id" layoutX="75.0" layoutY="392.0" text="Название " visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="390.0" text="Статус:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="113.0" layoutY="23.0" text="Добавление аудиокниги" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold" size="58.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

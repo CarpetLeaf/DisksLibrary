@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="1031.0" style="-fx-background-color: #444C5C;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <children>
+      <AnchorPane layoutY="118.0" prefHeight="413.0" prefWidth="1029.0" style="-fx-background-color: #E1B16A;">
+         <children>
+            <TableView fx:id="table_filling" layoutX="351.0" layoutY="107.0" prefHeight="200.0" prefWidth="335.0" visible="false">
+              <columns>
+                <TableColumn fx:id="column_id" prefWidth="45.0" text="id" />
+                <TableColumn fx:id="column_type" prefWidth="89.0" text="Тип места" />
+                  <TableColumn fx:id="column_num" prefWidth="106.0" text="Номер места" />
+                  <TableColumn fx:id="column_cnt" prefWidth="94.0" text="Кол-во дисков" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tableFilms" layoutX="145.0" layoutY="60.0" prefHeight="308.0" prefWidth="748.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="fcolumn_name" prefWidth="136.0" text="Имя" />
+                  <TableColumn fx:id="fcolumn_country" prefWidth="110.0" text="Страна" />
+                  <TableColumn fx:id="fcolumn_age" prefWidth="54.0" text="Возростное ограничение" />
+                  <TableColumn fx:id="fcolumn_duration" prefWidth="56.0" text="Продолжительность" />
+                  <TableColumn fx:id="fcolumn_genre" prefWidth="86.0" text="Жанр" />
+                  <TableColumn fx:id="fcolumn_director" prefWidth="100.0" text="Режисер" />
+                  <TableColumn fx:id="fcolumn_year" prefWidth="71.0" text="Релиз" />
+                  <TableColumn fx:id="fcolumn_cnt" minWidth="9.0" prefWidth="134.0" text="Кол-во дубликатов" />
+               </columns>
+            </TableView>
+            <TableView fx:id="findMusic" layoutX="238.0" layoutY="131.0" prefHeight="200.0" prefWidth="563.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="mcolumn_name" prefWidth="146.0" text="Название" />
+                  <TableColumn fx:id="mcolumn_singer" prefWidth="123.0" text="Исполнитель" />
+                  <TableColumn fx:id="mcolumn_date" prefWidth="94.0" text="Дата выхода" />
+                  <TableColumn fx:id="mcolumn_genre" prefWidth="77.0" text="Жанр" />
+                  <TableColumn fx:id="mcolumn_price" prefWidth="122.0" text="Кол-во дубликатов" />
+               </columns>
+            </TableView>
+            <TableView fx:id="tableAudiobooks" layoutX="151.0" layoutY="53.0" prefHeight="308.0" prefWidth="737.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="acolumn_name" prefWidth="142.0" text="Название" />
+                  <TableColumn fx:id="acolumn_author" prefWidth="142.0" text="Автор" />
+                  <TableColumn fx:id="acolumn_duration" prefWidth="159.0" text="Продолжительность" />
+                  <TableColumn fx:id="acolumn_year" minWidth="8.0" prefWidth="116.0" text="Релиз" />
+                  <TableColumn fx:id="acolumn_age" prefWidth="58.0" text="Возростное ограничение" />
+                  <TableColumn fx:id="acolumn_cnt" minWidth="9.0" prefWidth="118.0" text="Кол-во дубликатов" />
+               </columns>
+            </TableView>
+            <TableView fx:id="findDocument" layoutX="257.0" layoutY="107.0" prefHeight="200.0" prefWidth="525.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="dcolumn_name" prefWidth="136.0" text="Название" />
+                  <TableColumn fx:id="dcolumn_value" prefWidth="138.0" text="Объем" />
+                  <TableColumn fx:id="dcolumn_date" prefWidth="122.0" text="Дата обновления" />
+                  <TableColumn fx:id="column_price1" prefWidth="127.0" text="Кол-во дубликатов" />
+               </columns>
+            </TableView>
+            <TableView fx:id="findProgram" layoutX="260.0" layoutY="107.0" prefHeight="200.0" prefWidth="509.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="pcolumn_name" prefWidth="136.0" text="Название" />
+                  <TableColumn fx:id="pcolumn_developer" prefWidth="138.0" text="Разработчик" />
+                  <TableColumn fx:id="pcolumn_date" prefWidth="122.0" text="Дата обновления" />
+                  <TableColumn fx:id="pcolumn_price" prefWidth="111.0" text="Кол-во дубликатов" />
+               </columns>
+            </TableView>
+         </children></AnchorPane>
+      <Label layoutX="232.0" layoutY="39.0" text="Домашняя дискотека" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="58.0" />
+         </font>
+      </Label>
+      <MenuBar fx:id="menu_id" prefHeight="25.0" prefWidth="1029.0">
+        <menus>
+          <Menu fx:id="add_menu" mnemonicParsing="false" text="Add">
+            <items>
+              <MenuItem fx:id="add_film" mnemonicParsing="false" text="Film" />
+                  <MenuItem fx:id="add_music" mnemonicParsing="false" text="Music" />
+                  <MenuItem fx:id="add_audio_book" mnemonicParsing="false" text="Audiobook" />
+                  <MenuItem fx:id="add_document" mnemonicParsing="false" text="Document" />
+                  <MenuItem fx:id="add_program" mnemonicParsing="false" text="Program" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Find">
+               <items>
+                  <MenuItem fx:id="find_film" mnemonicParsing="false" text="Film" />
+                  <MenuItem fx:id="find_music" mnemonicParsing="false" text="Music" />
+                  <MenuItem fx:id="find_audiobook" mnemonicParsing="false" text="Audiobook" />
+                  <MenuItem fx:id="find_document" mnemonicParsing="false" text="Document" />
+                  <MenuItem fx:id="find_program" mnemonicParsing="false" text="Program" />
+               </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Statistics">
+              <items>
+                  <Menu fx:id="duplicates_id" mnemonicParsing="false" text="Duplicates">
+                    <items>
+                      <MenuItem fx:id="dup_film" mnemonicParsing="false" text="Films" />
+                        <MenuItem fx:id="dup_music" mnemonicParsing="false" text="Music" />
+                        <MenuItem fx:id="dup_audiobooks" mnemonicParsing="false" text="Audiobooks" />
+                        <MenuItem fx:id="dup_docs" mnemonicParsing="false" text="Documents" />
+                        <MenuItem fx:id="dup_progs" mnemonicParsing="false" text="Programs" />
+                    </items>
+                  </Menu>
+                  <MenuItem fx:id="filling_menu" mnemonicParsing="false" text="Filling density" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="868.0" style="-fx-background-color: #444C5C;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddFilmController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="118.0" prefHeight="448.0" prefWidth="849.0" style="-fx-background-color: #E1B16A;">
+         <children>
+            <TextField fx:id="name_id" layoutX="271.0" layoutY="32.0" />
+            <Button fx:id="ok_button_id" layoutX="748.0" layoutY="389.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="86.0" text="Ок">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Label layoutX="42.0" layoutY="31.0" text="Название фильма">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="country_id" layoutX="271.0" layoutY="67.0" />
+            <Label layoutX="42.0" layoutY="66.0" text="Страна производства">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="102.0" text="Возростное ограничение">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="duration_id" layoutX="271.0" layoutY="142.0" />
+            <Label layoutX="42.0" layoutY="141.0" text="Продолжительность">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="179.0" text="Жанр">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="director_id" layoutX="271.0" layoutY="216.0" />
+            <Label layoutX="42.0" layoutY="215.0" text="Режиссер">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="year_id" layoutX="673.0" layoutY="32.0" />
+            <Label layoutX="490.0" layoutY="31.0" text="Год выпуска">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="490.0" layoutY="66.0" text="Формат диска">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="publisher_id" layoutX="673.0" layoutY="103.0" />
+            <Label layoutX="490.0" layoutY="102.0" text="Издатель">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="price_id" layoutX="673.0" layoutY="142.0" />
+            <Label layoutX="490.0" layoutY="141.0" text="Цена">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="490.0" layoutY="179.0" text="Тип контейнера">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="490.0" layoutY="215.0" text="Номер контейнера">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="place_type_id" layoutX="675.0" layoutY="181.0" prefWidth="150.0" />
+            <ComboBox fx:id="place_num_id" disable="true" layoutX="675.0" layoutY="216.0" prefWidth="150.0" />
+            <TextArea fx:id="description_id" layoutX="173.0" layoutY="259.0" prefHeight="91.0" prefWidth="656.0" />
+            <Label layoutX="37.0" layoutY="291.0" text="Описание">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="genre_id" layoutX="271.0" layoutY="180.0" prefWidth="150.0" />
+            <ComboBox fx:id="age_id" layoutX="271.0" layoutY="103.0" prefWidth="150.0" />
+            <ComboBox fx:id="type_id" layoutX="673.0" layoutY="67.0" prefWidth="150.0" />
+            <Label layoutX="14.0" layoutY="376.0" text="Статус:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="status_id" layoutX="79.0" layoutY="375.0" text="Название " visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="170.0" layoutY="30.0" text="Добавление фильма" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="58.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

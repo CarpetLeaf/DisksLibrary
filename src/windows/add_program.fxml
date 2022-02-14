@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="868.0" style="-fx-background-color: #444C5C;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddProgramController">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="118.0" prefHeight="312.0" prefWidth="849.0" style="-fx-background-color: #E1B16A;">
+            <children>
+                <TextField fx:id="name_id" layoutX="271.0" layoutY="32.0" />
+                <Button fx:id="ok_button_id" layoutX="750.0" layoutY="237.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="86.0" text="Ок">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Button>
+                <Label layoutX="42.0" layoutY="31.0" text="Название ">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="developer_id" layoutX="271.0" layoutY="67.0" />
+                <Label layoutX="42.0" layoutY="66.0" text="Разработчик">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="42.0" layoutY="102.0" text="Дата выхода">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="490.0" layoutY="31.0" text="Тип диска">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="publisher_id" layoutX="673.0" layoutY="67.0" />
+                <Label layoutX="490.0" layoutY="66.0" text="Издатель">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="price_id" layoutX="673.0" layoutY="103.0" />
+                <Label layoutX="490.0" layoutY="102.0" text="Цена">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="490.0" layoutY="141.0" text="Тип контейнера">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="490.0" layoutY="179.0" text="Номер контейнера">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="place_type_id" layoutX="675.0" layoutY="143.0" prefWidth="150.0" />
+                <ComboBox fx:id="place_num_id" disable="true" layoutX="675.0" layoutY="180.0" prefWidth="150.0" />
+                <ComboBox fx:id="type_id" layoutX="673.0" layoutY="32.0" prefWidth="150.0" />
+                <DatePicker fx:id="date_id" layoutX="271.0" layoutY="103.0" prefHeight="25.0" prefWidth="150.0" />
+                <Label layoutX="5.0" layoutY="258.0" text="Статус">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="status_id" layoutX="70.0" layoutY="257.0" text="Название " visible="false">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            <Label layoutX="29.0" layoutY="185.0" text="Описание">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="description_id" layoutX="146.0" layoutY="143.0" prefHeight="110.0" prefWidth="280.0" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="119.0" layoutY="29.0" text="Добавление программы" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold" size="58.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
